@@ -1,0 +1,62 @@
+/*LATO -------------------------------------*/
+@font-face {
+  font-family: 'LatoBold';
+  src: url('//assets.edmodo.com/fonts/lato-bold-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('//assets.edmodo.com/fonts/lato-bold-webfont.woff') format('woff'),
+       url('//assets.edmodo.com/fonts/lato-bold-webfont.ttf') format('truetype'),
+       url('//assets.edmodo.com/fonts/lato-bold-webfont.svg#latolight') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('//assets.edmodo.com/fonts/lato.eot');
+  src: url('//assets.edmodo.com/fonts/lato.eot?#iefix') format('embedded-opentype'),
+       url('//assets.edmodo.com/fonts/lato.svg') format('svg'),
+       url('//assets.edmodo.com/fonts/lato.woff') format('woff'),
+       url('//assets.edmodo.com/fonts/lato.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatoLight';
+  src: url('//assets.edmodo.com/fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+  src: url('//assets.edmodo.com/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//assets.edmodo.com/fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+       url('//assets.edmodo.com/fonts/Lato-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'LatoThin';
+  src: url('//assets.edmodo.com/fonts/Lato-Thin.eot'); /* IE9 Compat Modes */
+  src: url('//assets.edmodo.com/fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//assets.edmodo.com/fonts/Lato-Thin.woff') format('woff'), /* Modern Browsers */
+       url('//assets.edmodo.com/fonts/Lato-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*ALEO -------------------------------------*/
+@font-face {
+  font-family: 'aleolight';
+  src: url('//assets.edmodo.com/fonts/Aleo-Light-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('//assets.edmodo.com/fonts/Aleo-Light-webfont.svg#aleolight') format('svg'),
+       url('//assets.edmodo.com/fonts/Aleo-Light-webfont.woff') format('woff'),
+       url('//assets.edmodo.com/fonts/Aleo-Light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aleoregular';
+  src: url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg'),
+       url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.woff') format('woff'),
+       url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,110 @@
+/* -------------- Primary Input Styling ---------------*/
+input,textarea,select{
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #dfe4e8;
+  border-radius: 3px;
+  background: #F8F9FA;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.07) inset;
+  padding: 3px;
+  outline:none;
+  resize:none;
+  -moz-transition-property: background, border, box-shadow;
+  -moz-transition-duration: .2s;
+  -webkit-transition-property: background, border, box-shadow;
+  -webkit-transition-duration: .2s;
+  transition-property: background, border, box-shadow;
+  transition-duration: .2s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  &::-webkit-input-placeholder {color: #8890A2;}
+  &:-moz-placeholder {color: #8890A2;}
+  &::-moz-placeholder {color: #8890A2;}
+  &:-ms-input-placeholder {color: #8890A2;}
+  &:disabled {
+    cursor: not-allowed;
+    opacity:0.5;
+  }
+  &:focus {
+    background: #fff;
+    border: 1px solid #6fa6df;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.1) inset, 0px 1px 2px rgba(246,250,253,.1);
+  }
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+input.input-error, textarea.input-error,
+select.input-error {
+  border: 1px solid #d93f44;
+  background:#ffebeb;
+  color:$red;
+  &::-webkit-input-placeholder {color: $red;}
+  &:-moz-placeholder {color: $red;}
+  &::-moz-placeholder {color: $red;}
+  &:-ms-input-placeholder {color: $red;}
+}
+/* -------------- Sunken Input Styling ---------------*/
+.sunken {
+  background: $sunken;
+  input,textarea {
+    background: #fff;
+    border: 1px solid #d2d6d8;
+    &:focus {
+      background: #fff;
+      border: 1px solid #6fa6df;
+      box-shadow: 0px 1px 2px rgba(0,0,0,.1) inset, 0px 1px 2px rgba(246,250,253,.1);
+    }
+  }
+  .placeholder-container input:focus,
+  .placeholder-container textarea:focus {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+
+/* -------------- Form Control ---------------*/
+.form-control {
+    border-radius: 2px;
+    color: $gray2;
+    font-size: 13px;
+    border-color: #D5DBE1;
+}
+.form-control:focus,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.has-error .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/**
+ * Search box
+ */
+input.form-control.search-input {
+  height: 32px;
+  border-radius: 2px;
+  padding-right: 35px;
+  background-image: url('/images/topbar/search-separator.png');
+  background-position: right 50%;
+  background-repeat: no-repeat;
+}
+
+.gradient-input {
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 );
+  border: 1px solid #d5dbe1;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}

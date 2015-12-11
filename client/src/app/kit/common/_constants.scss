@@ -1,0 +1,88 @@
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+$gray:           #F2F2F3;
+$gray1:          #CBCDD2;
+$gray2:          #A5A8B1;
+$gray3:          #7E8390;
+$gray4:          #585E6F;
+$gray5:          #323a4e;
+
+$blue:           #276bb0;
+$light-blue:     #F0F8FF;
+$dark-blue:      #004688;
+$teal:           #4EB1CB;
+$green:          #79b241;
+$dark-green:     #73AC39;
+$pink:           #D96383;
+$red:            #d63a40;
+$dark-red:       #df3d35;
+$purple:         #717ECD;
+$greenYellow:    #CDDC39;
+$yellow:         #f5c960;
+$orangeYellow:   #FFC107;
+$orange:         #ee9923;
+
+//** Global background & text color for `<body>`.
+$body-bg:        #eef2f6;
+$text-color:     #383d48;
+$sunken:         #f8f9fa;
+
+//** Global textual link color.
+$link-color:            #3784d3;
+$link-hover-color:      darken($link-color, 15%); /*-#045eb9-*/
+$link-hover-decoration: underline;
+
+//** Global Divider Color
+$divider-color:         #dfe4e8;
+/* -------------- Fonts ---------------*/
+//* Gray and brand colors for use across Edmodo. -*/
+$font-fallback:        Helvetica, Arial, sans-serif;
+$font-body-ultralight: 'HelveticaNeue-UltraLight', $font-fallback;
+$font-body-light:      'HelveticaNeue-Light', $font-fallback;
+$font-body-thin:       'HelveticaNeue-Thin', $font-fallback;
+$font-body-regular:    'HelveticaNeue', $font-fallback;
+$font-heading:         '';
+$font-lato:            'Lato', $font-fallback;
+$font-lato-light:      'Lato-Light', $font-fallback;
+$font-lato-bold:       'Lato-Bold', $font-fallback;
+$font-icon:            '';
+$font-size-base:       13px;
+$default-text-size:    13px;
+
+
+// @see /common/_constants.scss
+$opacity-is-busy : 0.3;
+$opacity-is-disabled : 0.3;
+$transition-speed-busy : .2s;
+
+// Layout Values
+// TODO: what does this mean?
+$padding: 1em;
+
+// Border + container treatments
+$radius: 3px;
+$outer-shadow: 0 1px 2px 0 $gray;
+
+// Animations Values
+$cubic-bezier: cubic-bezier(.13,.85,.27,.92);
+
+// Breakpoints
+$breakpoint-medium: 30em;
+$breakpoint-large: 50em;
+
+// TODO: this will be deprecated in favor of row-hover below
+$collection-list-hover:    #f6f9fb;
+$collection-list-selected: #f6f9fb;
+$collection-list-selected-item: #f6f9fb;
+// Row Bg State
+$row-hover: #f6f9fb;
+$row-selected: #f6f9fb;
+
+$color-text-secondary: $gray2;
+$color-link-actionable: $blue;

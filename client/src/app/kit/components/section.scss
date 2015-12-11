@@ -1,0 +1,89 @@
+.section {
+  display: inline-block;
+  background-color: #fff;
+  width:100%;
+  border: 1px solid;
+  border-color:#DAE1E8 #D3DDE5 #B6C8D8;
+  box-shadow: 0px 1px 0px 0px rgba(56, 61, 72, 0.09);
+  margin-bottom: 14px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius:3px;
+  .section-header {
+    background-color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    overflow:visible;
+    border-bottom: 1px solid $divider-color;
+    h2 {
+      line-height:24px;
+      font-size:20px;
+      font-weight:500;
+      font-family: $font-lato;
+      padding:0px 15px 2px;
+    }
+  }
+  .sub-section-header,
+  .sub-section-header-big{
+    font-size:18px;
+    font-family: "Helvetica Neue" helvetica, arial, sans-serif;
+    line-height:26px;
+    color: #464d5c;
+  }
+  .content {
+    padding: 15px;
+  }
+  .sub-section-header-big{font-size:22px;}
+  .section-header-bg,
+  .section-header-no-bg{
+    padding:12px 10px 12px 15px;
+    overflow:auto;
+    line-height:22px;
+  }
+  .section-header-bg{
+    font-size:15px;
+    font-family: "HelveticaNeue" helvetica, arial, sans-serif;
+    font-weight: 300;
+    background:#757F93;
+    border-radius: 2px 2px 0 0;
+    color:#fff;
+    overflow:visible;
+  }
+  .section-header-bg-white {
+    padding:13px 10px 13px 15px;
+    line-height:22px;
+    color: #546980;
+    background-color: #ffffff;
+    font-size:18px;
+    border-radius: 2px 2px 0 0;
+    overflow:visible;
+    border-bottom: 1px solid $divider-color;
+  }
+  .section-header-no-bg{
+    font-size:18px;
+    font-family: "HelveticaNeue" helvetica, arial, sans-serif;
+    font-weight: 300;
+    background:none;
+    border-radius:0;
+    color:#000;
+  }
+}
+body.ie8 .section { border: 1px solid $divider-color; }
+.section.transparent,
+body.ie8 .section.transparent {
+  background-color: transparent;
+  border:none;
+  box-shadow:none;
+}
+.section.first {margin-top:0}
+.section.padding{padding:10px 12px}
+
+/*-- DIVIDER --*/
+hr {
+  background: $divider-color;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.4em;
+  border: none;
+}

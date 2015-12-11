@@ -1,0 +1,127 @@
+@import "../common/_constants.scss";
+
+/*---- BODY ---*/
+body {
+  color: $text-color;
+}
+/*---- HEADLINES ---*/
+html,body,div,p,form,fieldset,legend,
+label,button,input,select,textarea{
+  font-size: $font-size-base;
+  font-family: $font-body-regular;
+  color: $text-color;
+  margin:0;
+  padding:0;
+  line-height:22px;
+}
+h1, h2, h3, h4 {
+  small {
+    font-size: 60%;
+    color:$gray3;
+    line-height: inherit;
+    padding-left: 10px;
+  }
+}
+h1 {
+  font-size: 2.3em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: $font-lato;
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: $font-lato;
+}
+h3 {
+  font-size: 1.43em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: $font-lato;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 2.0;
+  font-weight: 500;
+  font-family: $font-lato;
+}
+p {
+  margin:0px 0 16px;
+  line-height: 22px;
+  font-size: 13px;
+}
+/*---- Links ---*/
+a {
+  color:$link-color;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  &:hover, .pseudolink {
+    color: $link-hover-color;
+  }
+  &:hover, &:visited, .pseudolink {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+/*---- Lists ---*/
+ul.circle {
+  list-style-type: circle;
+  border-width: 3px;
+  ul {
+    list-style: inherit;
+    padding: 0 1.25rem;
+    margin-bottom: 0;
+  }
+}
+ul, ol {
+  ul {
+    list-style: inherit;
+    padding: 0 1.25rem;
+  }
+}
+/*---- Label ---*/
+label {
+  cursor:pointer;
+}
+/*---- Misc ---*/
+.subtext, a .subtext, a.subtext {
+  color: $color-text-secondary;
+}
+.text-15 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+.embossed {
+  color:rgba(255,255,255,0.7 );
+  text-shadow: -1px -1px 1px rgba(25, 25, 25, 0.2);
+  font-weight: bold;
+}
+.profile {
+  font-size: 30px;
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+.small-text {
+  font-size: $font-size-base;
+  line-height:1.2;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-30 {
+  font-size: 30px;
+}

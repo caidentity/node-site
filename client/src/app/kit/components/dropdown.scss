@@ -1,0 +1,116 @@
+@import "../common/_constants.scss";
+/*---- DROPDOWN ---*/
+.dropdown-menu {
+  border-radius: 2px;
+  border: 0;
+  box-shadow: 0px 2px 6px rgba(184, 189, 199, 1);
+  padding: 0;
+  margin: 10px 0 0 2px;
+  li {
+    position: relative;
+    a {
+      padding: 13px 20px;
+      font-size: 12px;
+      line-height: 12px;
+      color: #2d7ccc;
+      background: #fff;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #f0f2f4;
+      &:hover {
+        background-color: #fafafb;
+        color: #2d7ccc;
+      }
+    }
+
+    &:first-child {
+      &:hover + .dropdown-arrow {
+        color: #fafafb;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-bottom: none;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+    }
+  }
+
+  .dropdown-arrow {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 12px;
+    top: -14px;
+    -webkit-transform: scaleX(2.1);
+    text-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+
+    + li > a {
+      border-top-left-radius: 2px 2px;
+      border-top-right-radius: 2px 2px;
+    }
+  }
+}
+
+.pull-right > .dropdown-menu {
+    right: 5px;
+}
+
+.edmodo-container .header {
+    .dropdown {
+        .dropdown-menu {
+            margin-top: 5px;
+            -webkit-animation: .23s forwards;
+            -webkit-transform-origin: top center;
+            -moz-animation: .23s forwards;
+            -moz-transform-origin: top center;
+            -o-animation: .23s forwards;
+            -o-transform-origin: top center;
+            -ms-animation: .23s forwards;
+            -ms-transform-origin: top center;
+            animation: .23s forwards;
+            transform-origin: top center;
+            max-height: 350px;
+            overflow-y: visible;
+        }
+
+        &.open .dropdown-menu {
+            -webkit-animation-name: open-dropdown-animation;
+            -moz-animation-name: open-dropdown-animation;
+            -o-animation-name: open-dropdown-animation;
+            -ms-animation-name: open-dropdown-animation;
+            animation-name: open-dropdown-animation;
+        }
+    }
+}
+
+@-webkit-keyframes open-dropdown-animation {
+    from { opacity: 0; -webkit-transform: translate3d(0px, 0px, 0) scale(0.3, 0.3); }
+    40% { opacity: 1; -webkit-transform: translate3d(-2px, 2px, 0) scale(1.1, 1.1); }
+    to { opacity: 1; -webkit-transform: translate3d(0, 0, 0) scale(1, 1); }
+}
+@-moz-keyframes open-dropdown-animation {
+    from { opacity: 0; -moz-transform: translate3d(0px, 0px, 0) scale(0.3, 0.3); }
+    40% { opacity: 1; -moz-transform: translate3d(-2px, 2px, 0) scale(1.1, 1.1); }
+    to { opacity: 1; -moz-transform: translate3d(0, 0, 0) scale(1, 1); }
+}
+@-o-keyframes open-dropdown-animation {
+    from { opacity: 0; -o-transform: translate3d(0px, 0px, 0) scale(0.3, 0.3); }
+    40% { opacity: 1; -o-transform: translate3d(-2px, 2px, 0) scale(1.1, 1.1); }
+    to { opacity: 1; -o-transform: translate3d(0, 0, 0) scale(1, 1); }
+}
+@-ms-keyframes open-dropdown-animation {
+    from { opacity: 0; -ms-transform: translate3d(0px, 0px, 0) scale(0.3, 0.3); }
+    40% { opacity: 1; -ms-transform: translate3d(-2px, 2px, 0) scale(1.1, 1.1); }
+    to { opacity: 1; -ms-transform: translate3d(0, 0, 0) scale(1, 1); }
+}
+@keyframes open-dropdown-animation {
+    from { opacity: 0; transform: translate3d(0px, 0px, 0) scale(0.3, 0.3); }
+    40% { opacity: 1; transform: translate3d(-2px, 2px, 0) scale(1.1, 1.1); }
+    to { opacity: 1; transform: translate3d(0, 0, 0) scale(1, 1); }
+}
+
+.dropdown-toggle:focus {
+    text-decoration: none;
+}

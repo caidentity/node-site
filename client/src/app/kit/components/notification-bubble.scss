@@ -1,0 +1,22 @@
+.notification-bubble {
+	display: inline-block;
+	padding: 1px 5px 1px 6px;
+	text-align: center;
+	border-radius: 20px;
+	background: #EB2C19;
+	color: #fff;
+	font-size: 10px;
+	letter-spacing: 0.7px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+.nav-list {
+  li {
+  	.notification-bubble {
+  		position: absolute;
+  		top: 13px;
+		right: 15px;
+  	}
+  }
+}

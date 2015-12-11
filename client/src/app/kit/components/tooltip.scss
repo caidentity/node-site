@@ -1,0 +1,92 @@
+.ttip {position: relative;}
+
+/* TOOLTIP */
+#eTooltip {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: -999em;
+  z-index: 105;
+  .arrow {
+    position: relative;
+    margin: -9px auto 0 auto;
+    background: url ('//assets.edmodo.com/images_v2/sprites/sprite-site-v2.png') 0 -193px no-repeat;
+    height: 10px;
+    width: 19px;
+  }
+  p {
+    color: #fff;
+    padding: 5px 18px 5px 18px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+#eTooltip.bottom #eTooltipArrow {
+  width: 14px;
+  height: 6px;
+  margin: 0 auto;
+}
+#eTooltip.left #eTooltipArrow {
+  position: absolute;
+  top: 8px;
+  right: -6px;
+}
+#eTooltip.top #eTooltipArrow {
+  position: absolute;
+  top: 100%;
+  width:100%;
+}
+#eTooltipArrow div, .panelarrow div {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+}
+#eTooltip.bottom #eTooltipArrow div {
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent #757e93 transparent;
+}
+#eTooltip.top #eTooltipArrow div {
+  margin:0 auto;
+  border-width: 7px 7px 0 7px;
+  border-color: #757e93 transparent transparent transparent;
+}
+#eTooltip.right #eTooltipArrow div {
+  position: absolute;
+  top: 18px;
+  left: -6px;
+  border-width: 7px 7px 7px 0px;
+  border-color: transparent #757e93 transparent transparent;
+}
+.panelarrow {
+  position: relative;
+  width: 14px;
+  height: 7px;
+  margin: 0 auto;
+  div {
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+#rightside #settings-panel .panelarrow {
+  margin-left: 86%;
+  height: 6px;
+}
+
+#eTooltip.left #eTooltipArrow div {
+  border-width: 7px 0 7px 7px;
+  border-color: transparent transparent transparent #757e93;
+}
+#eTooltipInner {
+  background: #757e93;
+  min-width: 35px;
+  text-align: center;
+  border-radius: 2px;
+  max-width: 250px;
+  box-shadow: 0px 2px 6px rgba(117, 126, 147, 0.7);
+}
+#eTooltip.no-shadow #eTooltipInner { box-shadow: none; }
+
+body.ie7 #eTooltip2 {max-width: 150px;}

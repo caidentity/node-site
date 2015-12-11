@@ -1,0 +1,253 @@
+@import "../common/_constants.scss";
+
+/*----------------------*/
+/*---- WHITE BUTTON ----*/
+/*----------------------*/
+.btn, .btn:visited, a.btn,
+a.btn:visited {
+  border-radius: 3px;
+  padding: 6px 18px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: 13px;
+  color: #2077cf;
+  border: 1px solid #c3c9d1;
+  background-color: #fff;
+  -webkit-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out,
+    background 0.2s ease-in-out, border 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out,
+    background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out,
+    background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  &:hover {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: $light-blue;
+  }
+  &:active {
+    color: #2077cf;
+    box-shadow: 0px 0px 6px rgba(0,1,1,.15) inset;
+  }
+
+  // Buttons can be disabled and unusable
+  &.disabled, &.is-disabled {
+    opacity: $opacity-is-disabled;
+    cursor: default;
+    box-shadow: none;
+    pointer-events: none;
+    color: #8890a2;
+  }
+
+  // Button size variations
+  &.btn-mini {
+    padding: 2px 10px;
+  }
+  &.btn-large {
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+  &.btn-full {
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
+/*-------------------*/
+/*-- BORDER BUTTON --*/
+/*-------------------*/
+.border-btn, .border-btn:visited, a.border-btn, a.border-btn:visited {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: transparent;
+}
+.border-btn:hover, a.border-btn:hover {
+  color: #3f5673;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.1);
+}
+.border-btn:active, a.border-btn:active {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.51);
+}
+
+/*------------------------*/
+/*------ BLUE BUTTON -----*/
+/*------------------------*/
+.blue-btn,.blue-btn:focus, .blue-btn:visited, a.blue-btn, a.blue-btn:visited {
+  color: #fff;
+  border: 1px solid #2077cf;
+  border-bottom: 2px solid  #2077cf;
+  padding-bottom: -2px;
+  background-color: #2077cf;
+}
+.blue-btn:hover, a.blue-btn:hover {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid  #0E418C;
+  background-color: #1D70C4;
+}
+.blue-btn:active, a.blue-btn:active {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid  #0E418C;
+  background-color: #1467BC;
+}
+.btn.blue-btn.disabled, .btn.blue-btn.disabled:hover, .btn.blue-btn.disabled:active{
+  border: 1px solid rgba(37, 89, 164, 0.57);
+  background: rgba(113, 170, 228, 0.57);
+  box-shadow: 0 0px 2px 0 rgba(113, 170, 228, 0.57) inset;
+  color: #fff;
+}
+.blue-btn-flat, .blue-btn-flat:focus,
+.blue-btn-flat:visited,
+a.blue-btn-flat, a.blue-btn-flat:visited {
+  color: white;
+  background: #3784d3;
+  border-radius:1px;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+.blue-btn-flat:hover, a.blue-btn-flat:hover {
+  background: #2e7ac7;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0;
+}
+.blue-btn-flat:active, a.blue-btn-flat:active {
+  background: #256db6;
+}
+/*------------------------*/
+/*----- GREEN BUTTON -----*/
+/*------------------------*/
+.green-btn, .green-btn:visited, a.green-btn, a.green-btn:visited {
+  color: #fff;
+  border: 1px solid $green;
+  border-bottom: 2px solid $green;
+  padding-bottom: -2px;
+  background-color: $green;
+}
+.green-btn:hover, a.green-btn:hover {
+  color: #fff;
+  border: 1px solid #73AC39;
+  border-bottom: 2px solid  #5B8C2A;
+  background-color: #73AC39;
+}
+.green-btn:active, a.green-btn:active {
+  color: #fff;
+  border: 1px solid #6DA336;
+  border-bottom: 2px solid  #5B8C2A;
+  background-color: #669F2D;
+}
+.btn.green-btn.disabled, .btn.green-btn.disabled:hover, .btn.green-btn.disabled:active {
+  border: 1px solid rgba(80, 139, 23, 0.57);
+  background: rgba(167, 205, 123, 0.57);
+  color: rgba(71, 132, 15, 1.0);
+}
+
+/*----------------------*/
+/*----- RED BUTTON -----*/
+/*----------------------*/
+.red-btn, .red-btn:visited, a.red-btn, a.red-btn:visited {
+  color: #fff;
+  border: 1px solid $red;
+  border-bottom: 2px solid  $red;
+  padding-bottom: -2px;
+  background-color: $red;
+}
+.red-btn:hover, a.red-btn:hover {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid  #C12B24;
+  background-color: #df3d35;
+}
+.red-btn:active, a.red-btn:active {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid  #C12B24;
+  background-color: #df3d35;
+}
+.btn.red-btn.disabled, .btn.red-btn.disabled:hover, .btn.red-btn.disabled:active {
+  border: 1px solid rgba(153, 16, 6, 0.57);
+  background: rgba(223,134,124,.57);
+  box-shadow: 0 0px 2px 0 rgba(223, 134, 124, 0.57) inset;
+  color: #fff;
+}
+
+/*------------------------*/
+/*----- BUTTON GROUP -----*/
+/*------------------------*/
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  .btn {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    &:hover, &:focus, &:active {
+      z-index: 2;
+      background: $light-blue;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+      border-radius: 0;
+      .btn {border-radius: 0;}
+    }
+    &:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &:last-child:not(:first-child), .dropdown-toggle:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+  &:first-child:not(:last-child) .btn:last-child, .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &:last-child:not(:first-child) > .btn:first-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+.btn-toolbar {
+  margin-left: -5px;
+  .btn, .btn-group, .input-group {
+    float: left;
+    margin-left: 5px;
+  }
+}
+
+// This could be merge with .btn-group
+.action-buttons {
+  outline:none;
+  .selected {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: #F0F8FF;
+  }
+
+  /**
+   * When there are only 2 buttons to choose from ....
+   */
+  &.col-2 {
+    .btn {
+      width: 48%;
+
+      &:last-child {
+        float: right;
+      }
+    }
+
+  }
+}

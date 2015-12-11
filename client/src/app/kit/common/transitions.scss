@@ -1,0 +1,19 @@
+/**
+ * Transitions and Behaviours
+ */
+
+/**
+ * <div class="can-be-busy">
+ *   ...
+ * </div>
+ */
+.can-be-busy {
+  opacity: 1;
+  transition: opacity $transition-speed-busy ease-in-out;
+  -moz-transition: opacity $transition-speed-busy ease-in-out;
+  -webkit-transition: opacity $transition-speed-busy ease-in-out;
+
+  &.is-busy {
+    opacity: $opacity-is-busy;
+  }
+}

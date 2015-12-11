@@ -1,0 +1,104 @@
+@import "../common/_constants.scss";
+/*---- MODAL ---*/
+#facebox-overlay {
+  display: none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#151E2D;
+  z-index:99;
+}
+#facebox {
+  position:absolute;
+  z-index:104;
+  text-align:left;
+  box-shadow: 0px 1px 5px rgba(51, 57, 60, 0.45);
+  background-color: #fff;
+  td {padding: 0;}
+  .header {
+    overflow: hidden;
+    padding: 17px 15px;
+    border-radius: 2px 2px 0 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e3eaf0;
+    p {
+      color: #485061;
+      font-size: 18px;
+      font-family: "Lato" helvetica, arial, sans-serif;
+      font-weight: 400;
+    }
+    a.close {
+      display: block;
+      height: 15px;
+      width: 15px;
+      background: url('//assets.edmodo.com/images_v2/sprites/sprite-close.png') center -146px no-repeat;
+      margin-top: 2px;
+    }
+  }
+  .header.no-title {
+    border-bottom: 0;
+  }
+  .header.no-header {
+    display: none;
+  }
+  .body > div.content{
+    min-width:300px;
+    background-color: #fff;
+    border-radius: 0 0 2px 2px;
+  }
+  .body > div.content.loading>*{visibility:hidden}
+  .content.loading-fb{
+    background:url('//assets.edmodo.com/images_v2/loading.gif') center no-repeat;
+  }
+  .content.loading-fb *{
+    visibility:hidden;
+  }
+}
+#facebox.rounded {
+  border-radius: 3px;
+  overflow: hidden;
+}
+#facebox.photo-viewer .popup .body > .header { display: none; }
+#facebox.photo-viewer { margin-left: -150px; }
+#facebox.photo-viewer .content { position: relative; }
+#facebox.photo-viewer .thumbnail-nav {
+  position: absolute;
+  top: 0px;
+  right: -300px;
+}
+#facebox.photo-viewer .facebox-image { max-width: 620px; }
+#facebox.photo-viewer .facebox-image > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+}
+#facebox.no-background {
+  background-color:transparent;
+}
+#facebox.no-background .body > div.content {
+  background-color:transparent;
+}
+.facebox-footer {
+  padding: 10px 15px;
+  background: #f3f5f7;
+  text-align: right;
+  overflow: hidden;
+  border-top: 1px solid #dfe4e8;
+  clear: both;
+  border-radius: 0 0 2px 2px;
+}
+.facebox-footer a, .facebox-footer span {margin: 0 0 0 5px;}
+.facebox-footer span {color: #8890A2; margin: 0 8px}
+.facebox-footer span.steps {margin: 5px 0 0 0;}
+.facebox-footer span.steps .current {margin: 0;}
+
+.facebox-plain-footer {
+    padding: 20px;
+    text-align: right;
+}

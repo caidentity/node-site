@@ -1,0 +1,25 @@
+@import "../common/_constants.scss";
+
+/* -------------- DATE PICKER ---------------*/
+.datetime-picker {
+  input {
+    width: 130px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0 0 0 5px;
+    position: relative;
+    top: -2px;
+    color: #8890a2;
+    cursor: default;
+  }
+  .add-on {
+    display: inline-block;
+    padding: 6px 6px 3px 7px;
+    border-left: 1px solid #d5dbe1;
+    .glyphicon {
+      font-size: 16px;
+      color: #8a9aac;
+    }
+  }
+}

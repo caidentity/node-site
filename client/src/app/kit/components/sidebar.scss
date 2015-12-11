@@ -1,0 +1,39 @@
+/**
+ * Navigational Sidebars
+ * @namespace .nav
+ */
+ul.nav {
+  margin: 0px;
+  padding: 0px;
+  li {
+    position: relative;
+    list-style-type: none;
+    margin: 0px;
+    a {
+      position: relative;
+      display: block;
+      font-weight: 400;
+      padding: 13px 0 13px 15px;
+      word-wrap: break-word;
+      color: $gray4;
+      -webkit-transition:background-color 0.05s linear;
+      -moz-transition:background-color 0.05s linear;
+      -o-transition:background-color 0.05s linear;
+      transition:background-color 0.05s linear;
+
+      &:hover {
+        background-color: $collection-list-hover;
+        color:$link-color;
+      }
+
+      &.active {
+        background-color: $collection-list-selected-item;
+        font-weight: 400;
+      }
+    }
+  }
+  li:last-child {border-bottom:none;}
+  .footer {
+    border-top: 1px solid $divider-color;
+  }
+}
