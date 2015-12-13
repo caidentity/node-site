@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('sochat:server');
+var debug = require('debug')('static:server');
 var http = require('http');
 
 /**
