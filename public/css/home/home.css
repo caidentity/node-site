@@ -42,9 +42,8 @@
   border-top: 1px solid #eee; }
   .footer .logo {
     margin: 20px auto;
-    width: 40px;
-    height: 40px;
-    background: #000; }
+    width: 30px;
+    height: 30px; }
   .footer .nav {
     width: 30%;
     margin: 0 auto; }
@@ -53,6 +52,7 @@
       float: left;
       font-size: 16px;
       font-weight: 300;
+      margin-top: 10px;
       text-decoration: none;
       text-align: center; }
   .footer .subnav li {
