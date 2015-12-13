@@ -1,40 +1,40 @@
-var gulp = require('gulp'),
-  nodemon = require('gulp-nodemon'),
-  plumber = require('gulp-plumber'),
-  livereload = require('gulp-livereload'),
-  sass = require('gulp-sass');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var mainBowerFiles = require('main-bower-files');
+var nodemon = require('nodemon');
+
+var SASS_SRC = './views/**/*.scss';
+var JADE_SRC = './views/**/*.jade';
+var BOWER_SRC = './bower_components/**/*.*';
 
 gulp.task('sass', function () {
-  gulp.src('./public/css/*.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(gulp.dest('./public/css'))
-    .pipe(livereload());
+  gulp.src(SASS_SRC)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./public/css/*.scss', ['sass']);
+gulp.task('main-bower-files', function() {
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest('./public/js/third-party'));
 });
 
-gulp.task('develop', function () {
-  livereload.listen();
+
+gulp.task('watch:scss', function () {
+  gulp.watch(SASS_SRC, ['sass']);
+});
+
+gulp.task('watch:bower', function () {
+  gulp.watch(BOWER_SRC, ['main-bower-files']);
+});
+
+gulp.task('start', function () {
   nodemon({
-    script: 'bin/www',
-    ext: 'js handlebars coffee',
-    stdout: false
-  }).on('readable', function () {
-    this.stdout.on('data', function (chunk) {
-      if(/^Express server listening on port/.test(chunk)){
-        livereload.changed(__dirname);
-      }
-    });
-    this.stdout.pipe(process.stdout);
-    this.stderr.pipe(process.stderr);
+    script: './bin/www',
+    ext: 'js html',
+    env: { 'NODE_ENV': 'development' }
   });
 });
 
-gulp.task('default', [
-  'sass',
-  'develop',
-  'watch'
-]);
+gulp.task('bower', ['main-bower-files']);
+
+gulp.task('default', ['sass', 'bower', 'watch:bower', 'watch:scss', 'start']);

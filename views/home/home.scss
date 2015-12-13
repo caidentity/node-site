@@ -1,0 +1,73 @@
+/*-- HEADER --*/
+.home-head {
+  background: #F0F7FF;
+  width: 100%;
+  height: 700px;
+  h1 {
+    padding-top:100px;
+    color:#000;
+    font-size: 44px;
+    font-weight: 300
+  }
+  h2 {
+    color:#75879A;
+    font-size: 19px;
+    font-weight: 300
+  }
+  .logo {
+    width:100px;
+    height: 100px;
+    margin-top:60px;
+  }
+  .phone {
+    width:400px;
+    height: 560px;
+    margin-top: 40px;
+    background: #ccc;
+  }
+}
+.home-feature {
+  padding: 40px 0px;
+  background: #308CFE;
+  color: #fff;
+  font-weight: 100;
+  h4{
+    font-weight: 300;
+  }
+  h3{
+    font-weight: 300;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+/*-- FOOTER --*/
+.footer {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #eee;
+  .logo {
+    margin: 20px auto;
+    width:40px;
+    height: 40px;
+    background: #000;
+  }
+  .nav {
+    width: 30%;
+    margin: 0 auto;
+    li {
+      display: inline-block;
+      float: left;
+      font-size: 16px;
+      font-weight: 300;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  .subnav li {
+    font-size: 13px;
+    font-weight: 300;
+    color:#ccc;
+  }
+}

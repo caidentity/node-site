@@ -1,9 +1,21 @@
 {
-  "name": "node-site",
-  "version": "0.0.1",
+  "name": "static",
+  "description": "",
+  "main": "",
+  "authors": [
+    "ralusek <ralusek@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
-    "components"
-  ]
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
 }
